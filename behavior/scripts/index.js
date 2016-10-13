@@ -59,7 +59,7 @@ const provideWeather=client.createStep({
 	                condition:weatherDescription,
                     city:resultBody.name,
 	            }
-	            console.log('sending real weather:',weatherData)
+	            console.log('sending real weather:', weatherData)
 	            client.addResponse('app:response:name:provide_weather/current',weatherData)
                 client.done()
                 callback()
