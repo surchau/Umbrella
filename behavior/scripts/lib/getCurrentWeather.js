@@ -9,8 +9,8 @@ module.exports = function getCurrentWeather(locationName, next) {
     // const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=' + appId + '&q=' + { locationName }
     
     console.log('locationName is ', { locationName })
-
-    var x;
+    var lName
+    var x
     for (x in locationName) {
         lName += locationName[x];
     }
