@@ -8,8 +8,13 @@ module.exports = function getCurrentWeather(locationName, next) {
     //const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=${appId}&q=${locationName}'
     // const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=' + appId + '&q=' + { locationName }
     
-    console.log('locationName is ', {locationName})
-    const lName = locationName[0]
+    console.log('locationName is ', { locationName })
+
+    var x;
+    for (x in locationName) {
+        lName += locationName[x];
+    }
+   
     console.log('lName is '+lName )
     const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=243a4be2ddf76b9cf7299849d34103a8&q='+lName
     console.log('Making HTTP GET request to:', requestUrl)
