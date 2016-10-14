@@ -9,7 +9,7 @@ module.exports = function getCurrentWeather(locationName, next) {
     // const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=' + appId + '&q=' + { locationName }
     
     console.log('locationName is ', { locationName })
-    console.log('using value ' + client.getConversationState().locationName.value)
+    console.log('again ---' + locationName)
     var lName='Boston'
    
     console.log('lName is '+lName )
