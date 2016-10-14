@@ -9,14 +9,8 @@ module.exports = function getCurrentWeather(locationName, next) {
     // const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=' + appId + '&q=' + { locationName }
     
     console.log('locationName is ', { locationName })
-    var lName=locationName.locationName
-    //var data = { name: 'Property Name', value: 0 };
-
-    Object.keys(locationName); // to get the key out of key value pair
-    Object.keys(locationName).forEach(function (key) {
-        
-        var lName=locationName[key]   //we know there is only one key for now. todo handle later
-    });
+    console.log('using value ' + locationName.value)
+    var lname='Boston'
    
     console.log('lName is '+lName )
     const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=243a4be2ddf76b9cf7299849d34103a8&q='+lName
