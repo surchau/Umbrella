@@ -12,8 +12,7 @@ module.exports = function getCurrentWeather(locationName, next) {
     console.log('again ---' + locationName)
     
    
-    console.log('lName is '+lName )
-    const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=243a4be2ddf76b9cf7299849d34103a8&q='+locationName
+     const requestUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=243a4be2ddf76b9cf7299849d34103a8&q='+locationName
     console.log('Making HTTP GET request to:', requestUrl)
 
     request(requestUrl, (err, res, body) => {
